@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hans Service melayani servis HP, laptop, dan komputer di Bogor. Konsultasi kerusakan melalui WhatsApp.">
+  <meta name="theme-color" content="#102b4e">
+  <title>Hans Service | Servis HP, Laptop & Komputer Bogor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#beranda" aria-label="Hans Service beranda">
+        <span class="brand-mark">H<span>+</span></span>
+        <span class="brand-copy"><strong>HANS SERVICE</strong><small>Solusi perangkat Anda</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#beranda">Beranda</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#kontak">Kontak</a>
+        <a class="nav-cta" href="#konsultasi">Konsultasi <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="status-dot"></span> SERVIS ELEKTRONIK • BOGOR</div>
+          <h1>Perangkat bermasalah?<br><span>Kami bantu pulihkan.</span></h1>
+          <p class="hero-lead">Solusi servis HP, laptop, dan komputer dengan konsultasi yang jelas, proses yang transparan, dan penanganan yang teliti.</p>
+          <div class="hero-actions">
+            <a class="button button-orange" href="#konsultasi">Konsultasi Sekarang <span>↗</span></a>
+            <a class="button button-ghost" href="#layanan">Lihat Layanan <span>↓</span></a>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-icon">✓</div>
+            <p><strong>Harga transparan</strong><span>Estimasi awal sebelum perbaikan</span></p>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Ilustrasi perangkat elektronik">
+          <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+          <div class="device-card laptop-card">
+            <div class="laptop-screen">
+              <div class="screen-top"><span></span><span></span><span></span></div>
+              <div class="screen-content"><div class="screen-logo">H<span>+</span></div><div class="screen-line line-long"></div><div class="screen-line"></div><div class="screen-bars"><i></i><i></i><i></i><i></i><i></i></div></div>
+            </div><div class="laptop-base"></div>
+          </div>
+          <div class="device-card phone-card"><div class="phone-notch"></div><div class="phone-screen"><div class="phone-symbol">✦</div><div class="phone-line"></div><div class="phone-line short"></div><div class="phone-button">✓</div></div></div>
+          <div class="floating-tag tag-check"><span>✓</span> Siap dibantu</div>
+          <div class="floating-tag tag-price"><span>Rp</span><div><strong>Mulai 30rb</strong><small>Estimasi servis HP</small></div></div>
+          <div class="visual-caption">PERAWATAN • PERBAIKAN • KONSULTASI</div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span>LAYANAN PERANGKAT</span><div><span>01</span> Smartphone</div><div><span>02</span> Laptop</div><div><span>03</span> Komputer</div></div>
+    </section>
+
+    <section class="services section" id="layanan">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow eyebrow-light">LAYANAN KAMI</div><h2>Perbaikan tepat,<br><span>dimulai dari konsultasi.</span></h2></div>
+          <p>Jelaskan kendala perangkat Anda. Kami bantu meninjau kebutuhan servis dan memberikan estimasi awal sebelum tindakan perbaikan dilakukan.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-top"><div class="service-icon phone-icon">▯</div><span class="service-number">01 / MOBILE</span></div>
+            <h3>Servis HP</h3><p>Untuk kendala layar, baterai, pengisian daya, perangkat lambat, dan masalah lainnya.</p>
+            <div class="service-price"><small>Estimasi mulai</small><strong>Rp30.000</strong></div>
+            <button class="text-link choose-service" data-device="hp">Pilih layanan <span>↗</span></button>
+          </article>
+          <article class="service-card featured">
+            <div class="service-top"><div class="service-icon laptop-icon">▱</div><span class="service-number">02 / LAPTOP</span></div>
+            <h3>Servis Laptop</h3><p>Penanganan masalah performa, software, keyboard, daya, dan pemeriksaan perangkat.</p>
+            <div class="service-price"><small>Estimasi mulai</small><strong>Rp50.000</strong></div>
+            <button class="text-link choose-service" data-device="laptop">Pilih layanan <span>↗</span></button>
+          </article>
+          <article class="service-card">
+            <div class="service-top"><div class="service-icon pc-icon">▣</div><span class="service-number">03 / DESKTOP</span></div>
+            <h3>Servis Komputer</h3><p>Bantuan untuk kendala sistem, kinerja, komponen, dan pemeriksaan komputer.</p>
+            <div class="service-price"><small>Estimasi mulai</small><strong>Rp50.000</strong></div>
+            <button class="text-link choose-service" data-device="komputer">Pilih layanan <span>↗</span></button>
+          </article>
+        </div>
+        <p class="price-note"><span>ⓘ</span> Harga di atas adalah estimasi awal, bukan biaya final. Biaya dapat berubah sesuai tingkat kerusakan, kebutuhan pengerjaan, dan suku cadang. Konfirmasi terlebih dahulu sebelum perbaikan.</p>
+      </div>
+    </section>
+
+    <section class="why section" id="tentang">
+      <div class="container why-grid">
+        <div class="why-visual">
+          <div class="why-panel">
+            <div class="panel-top"><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-dot"></span><small>HANS SERVICE / CARE</small></div>
+            <div class="panel-main"><div class="panel-emblem">H<span>+</span></div><h3>Perangkat Anda,<br>perhatian kami.</h3><p>Diagnosa awal • Komunikasi jelas</p></div>
+            <div class="panel-bottom"><span>BOGOR, INDONESIA</span><span>EST. SERVICE</span></div>
+          </div>
+          <div class="why-sticker">SOLUSI<br><strong>LEBIH<br>MUDAH.</strong></div>
+        </div>
+        <div class="why-content">
+          <div class="eyebrow eyebrow-light">KENAPA HANS SERVICE?</div>
+          <h2>Servis yang dimulai<br>dengan <span>komunikasi.</span></h2>
+          <p class="why-intro">Kami percaya proses servis yang baik dimulai dengan memahami masalah perangkat Anda. Ceritakan kendalanya, lalu konsultasikan langkah berikutnya bersama Hans Service.</p>
+          <div class="benefit-list">
+            <div class="benefit"><span class="benefit-check">✓</span><div><strong>Estimasi biaya di awal</strong><p>Harga awal ditampilkan agar Anda punya gambaran sebelum konsultasi.</p></div></div>
+            <div class="benefit"><span class="benefit-check">✓</span><div><strong>Detail keluhan lebih jelas</strong><p>Informasi perangkat dan kerusakan dapat dikirim langsung melalui WhatsApp.</p></div></div>
+            <div class="benefit"><span class="benefit-check">✓</span><div><strong>Komunikasi praktis</strong><p>Hubungi kami untuk membahas kondisi perangkat dan opsi penanganan.</p></div></div>
+          </div>
+          <a class="button button-dark" href="#konsultasi">Mulai konsultasi <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="consult section" id="konsultasi">
+      <div class="container consult-grid">
+        <div class="consult-copy">
+          <div class="eyebrow">KONSULTASI SERVIS</div>
+          <h2>Ceritakan masalahnya.<br><span>Kami siap membantu.</span></h2>
+          <p>Isi detail perangkat dan keluhan Anda. Setelah menekan tombol, WhatsApp akan terbuka dengan pesan yang sudah disiapkan untuk dikirim ke Hans Service.</p>
+          <div class="consult-contact"><span class="wa-mini">◔</span><div><small>WhatsApp Hans Service</small><strong>0857-7555-1150</strong></div></div>
+          <div class="form-disclaimer">Dengan melanjutkan, detail yang Anda isi akan dimasukkan ke dalam pesan WhatsApp. Periksa kembali pesan sebelum mengirimkannya.</div>
+        </div>
+        <form class="consult-form" id="consultForm">
+          <div class="form-heading"><div><span>FORMULIR KONSULTASI</span><h3>Detail perangkat Anda</h3></div><span class="form-step">01 <i>/ 01</i></span></div>
+          <div class="form-row">
+            <label>Jenis perangkat <span>*</span>
+              <select id="deviceType" name="deviceType" required>
+                <option value="">Pilih perangkat</option><option value="HP">HP</option><option value="Laptop">Laptop</option><option value="Komputer">Komputer</option>
+              </select>
+            </label>
+            <label>Estimasi awal <span class="optional">(otomatis)</span>
+              <input id="estimate" type="text" value="Pilih perangkat" readonly aria-live="polite">
+            </label>
+          </div>
+          <div class="form-row">
+            <label>Merek perangkat <span>*</span><input id="brand" name="brand" type="text" placeholder="Contoh: Samsung, ASUS" required maxlength="80"></label>
+            <label>Model perangkat <span>*</span><input id="model" name="model" type="text" placeholder="Contoh: Galaxy A54" required maxlength="100"></label>
+          </div>
+          <label>Jelaskan kerusakan <span>*</span><textarea id="problem" name="problem" rows="4" placeholder="Ceritakan gejala atau kendala perangkat Anda..." required maxlength="1200"></textarea><small class="field-hint">Semakin detail informasinya, semakin mudah kami memahami kendala Anda.</small></label>
+          <div class="form-row">
+            <label>Nama pelanggan <span>*</span><input id="customerName" name="customerName" type="text" placeholder="Nama Anda" required maxlength="100"></label>
+            <label>Nomor HP pelanggan <span>*</span><input id="customerPhone" name="customerPhone" type="tel" inputmode="tel" placeholder="Contoh: 081234567890" required maxlength="20"></label>
+          </div>
+          <div class="form-bottom"><p><span>🔒</span> Detail akan disiapkan di WhatsApp Anda.</p><button class="button button-orange submit-button" type="submit">Kirim ke WhatsApp <span>↗</span></button></div>
+          <p class="form-error" id="formError" role="alert" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact section" id="kontak">
+      <div class="container">
+        <div class="section-heading contact-heading"><div><div class="eyebrow eyebrow-light">KUNJUNGI KAMI</div><h2>Siap membantu<br><span>perangkat Anda.</span></h2></div><a class="button button-orange" href="https://wa.me/6285775551150" target="_blank" rel="noopener">Chat WhatsApp <span>↗</span></a></div>
+        <div class="contact-grid">
+          <div class="contact-card"><span class="contact-icon">⌖</span><div><small>ALAMAT SERVIS</small><strong>Hans Service</strong><p>Jl. Kencana 1 Rt.05/02, Kencana<br>Tanah Sareal, Bogor, 16167</p><a href="https://www.google.com/maps/search/?api=1&query=Jl.+Kencana+1+Rt.05%2F02%2C+Kencana+Tanah+Sareal+Bogor+16167" target="_blank" rel="noopener">Lihat petunjuk arah ↗</a></div></div>
+          <div class="contact-card"><span class="contact-icon">◷</span><div><small>JAM OPERASIONAL</small><strong>Setiap hari</strong><p>08:00–20:00 WIB</p><span class="open-status"><i></i> Jam layanan terjadwal</span></div></div>
+          <div class="contact-card"><span class="contact-icon">◔</span><div><small>HUBUNGI KAMI</small><strong>0857-7555-1150</strong><p>Konsultasi perangkat via WhatsApp.</p><a href="https://wa.me/6285775551150" target="_blank" rel="noopener">Mulai percakapan ↗</a></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-wrap"><a class="brand footer-brand" href="#beranda"><span class="brand-mark">H<span>+</span></span><span class="brand-copy"><strong>HANS SERVICE</strong><small>Solusi perangkat Anda</small></span></a><p>Servis perangkat dengan komunikasi yang jelas.</p><span>© <span id="year"></span> Hans Service. Semua hak dilindungi.</span></div></footer>
+  <a class="floating-wa" href="https://wa.me/6285775551150" target="_blank" rel="noopener" aria-label="Hubungi Hans Service melalui WhatsApp"><span>◔</span><b>WhatsApp</b></a>
+</body>
+</html>
